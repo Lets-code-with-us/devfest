@@ -1,0 +1,19 @@
+{
+	"name": "@devfest/core",
+	"version": "1.0.0",
+	"description": "",
+	"exports": {
+		"./ui": "./ui/index.ts",
+		"./apis": "./apis/index.ts"
+	},
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+  "devDependencies": {
+    "@devfest/typescript-config":"workspace:*"
+  },
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"type": "module"
+}

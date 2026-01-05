@@ -1,0 +1,11 @@
+{
+	"arrowParens": "always",
+	"tabWidth": 4,
+	"htmlWhitespaceSensitivity": "css",
+	"objectWrap": "preserve",
+	"useTabs": true,
+	"trailingComma": "all",
+	"endOfLine": "lf",
+	"jsxSingleQuote": false,
+	"requirePragma": false
+}

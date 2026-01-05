@@ -1,1 +1,1 @@
-console.log("UI Tester")
+console.log("UI Tester");

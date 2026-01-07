@@ -19,7 +19,7 @@ export class GETHandler extends API {
 			expected: 200,
 			actual: status,
 		});
-        
+
 		this.assert.assert({
 			expected: "OK",
 			actual: statusText,

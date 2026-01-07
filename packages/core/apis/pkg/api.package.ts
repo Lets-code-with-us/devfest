@@ -9,5 +9,5 @@ export class API {
 			timeout: 3000,
 			validateStatus: () => true,
 		});
-	}	
+	}
 }

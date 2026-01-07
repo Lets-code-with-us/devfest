@@ -24,7 +24,7 @@ importers:
         dependencies:
             next:
                 specifier: 16.1.0
-                version: 16.1.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+                version: 16.1.0(@playwright/test@1.57.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
             react:
                 specifier: ^19.2.0
                 version: 19.2.0
@@ -101,7 +101,7 @@ importers:
                 version: 0.562.0(react@19.2.0)
             next:
                 specifier: 16.1.0
-                version: 16.1.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+                version: 16.1.0(@playwright/test@1.57.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
             postcss:
                 specifier: ^8.5.6
                 version: 8.5.6
@@ -144,6 +144,13 @@ importers:
                 version: 5.9.2
 
     packages/core:
+        dependencies:
+            axios:
+                specifier: ^1.13.2
+                version: 1.13.2
+            zod:
+                specifier: ^4.3.5
+                version: 4.3.5
         devDependencies:
             "@devfest/typescript-config":
                 specifier: workspace:*
@@ -659,6 +666,14 @@ packages:
                 integrity: sha512-oGB+UxlgWcgQkgwo8GcEGwemoTFt3FIO9ababBmaGwXIoBKZ+GTy0pP185beGg7Llih/NSHSV2XAs1lnznocSg==,
             }
         engines: { node: ">= 8" }
+
+    "@playwright/test@1.57.0":
+        resolution:
+            {
+                integrity: sha512-6TyEnHgd6SArQO8UO2OMTxshln3QMWBtPGrOCgs3wVEmQmwyuNtB10IZMfmYDE0riwNR1cu4q+pPcxMVtaG3TA==,
+            }
+        engines: { node: ">=18" }
+        hasBin: true
 
     "@radix-ui/primitive@1.1.3":
         resolution:
@@ -1302,12 +1317,24 @@ packages:
             }
         engines: { node: ">= 0.4" }
 
+    asynckit@0.4.0:
+        resolution:
+            {
+                integrity: sha512-Oei9OH4tRh0YqU3GxhX79dM/mwVgvbZJaSNaRk+bshkj0S5cfHcgYakreBjrHwatXKbz+IoIdYLxrKim2MjW0Q==,
+            }
+
     available-typed-arrays@1.0.7:
         resolution:
             {
                 integrity: sha512-wvUjBtSGN7+7SjNpq/9M2Tg350UZD3q62IFZLbRAR1bSMlCo1ZaeW+BJ+D090e4hIIZLBcTDWe4Mh4jvUDajzQ==,
             }
         engines: { node: ">= 0.4" }
+
+    axios@1.13.2:
+        resolution:
+            {
+                integrity: sha512-VPk9ebNqPcy5lRGuSlKx752IlDatOjT9paPlm8A7yOuW2Fbvp4X3JznJtT4f0GzGLLiWE9W8onz51SqLYwzGaA==,
+            }
 
     balanced-match@1.0.2:
         resolution:
@@ -1441,6 +1468,13 @@ packages:
                 integrity: sha512-dOy+3AuW3a2wNbZHIuMZpTcgjGuLU/uBL/ubcZF9OXbDo8ff4O8yVp5Bf0efS8uEoYo5q4Fx7dY9OgQGXgAsQA==,
             }
 
+    combined-stream@1.0.8:
+        resolution:
+            {
+                integrity: sha512-FQN4MRfuJeHf7cBbBMJFXhKSDq+2kAArBlmRBvcvFE5BB1HZKXtSFASDhdlz9zOYwxh8lDdnvmMOe/+5cdoEdg==,
+            }
+        engines: { node: ">= 0.8" }
+
     concat-map@0.0.1:
         resolution:
             {
@@ -1540,6 +1574,13 @@ packages:
                 integrity: sha512-8QmQKqEASLd5nx0U1B1okLElbUuuttJ/AnYmRXbbbGDWh6uS208EjD4Xqq/I9wK7u0v6O08XhTWnt5XtEbR6Dg==,
             }
         engines: { node: ">= 0.4" }
+
+    delayed-stream@1.0.0:
+        resolution:
+            {
+                integrity: sha512-ZySD7Nf91aLB0RxL4KGrKHBXl7Eds1DAmEdcoVawXnLD7SDhpNgtuII2aAkg7a7QS41jxPSZ17p4VdGnMHk3MQ==,
+            }
+        engines: { node: ">=0.4.0" }
 
     depd@2.0.0:
         resolution:
@@ -1913,6 +1954,13 @@ packages:
             }
         engines: { node: ">= 0.4" }
 
+    form-data@4.0.5:
+        resolution:
+            {
+                integrity: sha512-8RipRLol37bNs2bhoV67fiTEvdTrbMUYcFTiy3+wuuOnUog2QBHCZWXDRijWQfAkhBj2Uf5UnVaiWwA5vdd82w==,
+            }
+        engines: { node: ">= 6" }
+
     forwarded@0.2.0:
         resolution:
             {
@@ -1926,6 +1974,14 @@ packages:
                 integrity: sha512-Rx/WycZ60HOaqLKAi6cHRKKI7zxWbJ31MhntmtwMoaTeF7XFH9hhBp8vITaMidfljRQ6eYWCKkaTK+ykVJHP2A==,
             }
         engines: { node: ">= 0.8" }
+
+    fsevents@2.3.2:
+        resolution:
+            {
+                integrity: sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA==,
+            }
+        engines: { node: ^8.16.0 || ^10.6.0 || >=11.0.0 }
+        os: [darwin]
 
     function-bind@1.1.2:
         resolution:
@@ -2628,10 +2684,24 @@ packages:
             }
         engines: { node: ">=8.6" }
 
+    mime-db@1.52.0:
+        resolution:
+            {
+                integrity: sha512-sPU4uV7dYlvtWJxwwxHD0PuihVNiE7TyAbQ5SWxDCB9mUYvOgroQOwYQQOKPJ8CIbE+1ETVlOoK1UC2nU3gYvg==,
+            }
+        engines: { node: ">= 0.6" }
+
     mime-db@1.54.0:
         resolution:
             {
                 integrity: sha512-aU5EJuIN2WDemCcAp2vFBfp/m4EAhWJnUNSSw0ixs7/kXbd6Pg64EmwJkNdFhB8aWt1sH2CTXrLxo/iAGV3oPQ==,
+            }
+        engines: { node: ">= 0.6" }
+
+    mime-types@2.1.35:
+        resolution:
+            {
+                integrity: sha512-ZDY+bPm5zTTF+YpCrAU9nK0UgICYPT0QtT1NZWFv4s++TNkcgVaT0g6+4R2uI4MjQjzysHB1zxuWL50hzaeXiw==,
             }
         engines: { node: ">= 0.6" }
 
@@ -2913,6 +2983,22 @@ packages:
             }
         engines: { node: ">=12" }
 
+    playwright-core@1.57.0:
+        resolution:
+            {
+                integrity: sha512-agTcKlMw/mjBWOnD6kFZttAAGHgi/Nw0CZ2o6JqWSbMlI219lAFLZZCyqByTsvVAJq5XA5H8cA6PrvBRpBWEuQ==,
+            }
+        engines: { node: ">=18" }
+        hasBin: true
+
+    playwright@1.57.0:
+        resolution:
+            {
+                integrity: sha512-ilYQj1s8sr2ppEJ2YVadYBN0Mb3mdo9J0wQ+UuDhzYqURwSoW4n1Xs5vs7ORwgDGmyEh33tRMeS8KhdkMoLXQw==,
+            }
+        engines: { node: ">=18" }
+        hasBin: true
+
     possible-typed-array-names@1.1.0:
         resolution:
             {
@@ -2960,6 +3046,12 @@ packages:
                 integrity: sha512-llQsMLSUDUPT44jdrU/O37qlnifitDP+ZwrmmZcoSKyLKvtZxpyV0n2/bD/N4tBAAZ/gJEdZU7KMraoK1+XYAg==,
             }
         engines: { node: ">= 0.10" }
+
+    proxy-from-env@1.1.0:
+        resolution:
+            {
+                integrity: sha512-D+zkORCbA9f1tdWRK0RaCR3GPv50cMxcrz4X8k5LTSUD1Dkw47mKJEZQNunItRTkWwgtaUSo1RVFRIG9ZXiFYg==,
+            }
 
     punycode@2.3.1:
         resolution:
@@ -3653,6 +3745,12 @@ packages:
             }
         engines: { node: ">=10" }
 
+    zod@4.3.5:
+        resolution:
+            {
+                integrity: sha512-k7Nwx6vuWx1IJ9Bjuf4Zt1PEllcwe7cls3VNzm4CQ1/hgtFUK2bRNG3rvnpPUhFjmqJKAKtjV576KnUkHocg/g==,
+            }
+
 snapshots:
     "@alloc/quick-lru@5.2.0": {}
 
@@ -3885,6 +3983,11 @@ snapshots:
         dependencies:
             "@nodelib/fs.scandir": 2.1.5
             fastq: 1.19.1
+
+    "@playwright/test@1.57.0":
+        dependencies:
+            playwright: 1.57.0
+        optional: true
 
     "@radix-ui/primitive@1.1.3": {}
 
@@ -4330,9 +4433,19 @@ snapshots:
 
     async-function@1.0.0: {}
 
+    asynckit@0.4.0: {}
+
     available-typed-arrays@1.0.7:
         dependencies:
             possible-typed-array-names: 1.1.0
+
+    axios@1.13.2:
+        dependencies:
+            follow-redirects: 1.15.11
+            form-data: 4.0.5
+            proxy-from-env: 1.1.0
+        transitivePeerDependencies:
+            - debug
 
     balanced-match@1.0.2: {}
 
@@ -4415,6 +4528,10 @@ snapshots:
 
     color-name@1.1.4: {}
 
+    combined-stream@1.0.8:
+        dependencies:
+            delayed-stream: 1.0.0
+
     concat-map@0.0.1: {}
 
     content-disposition@1.0.1: {}
@@ -4468,6 +4585,8 @@ snapshots:
             define-data-property: 1.1.4
             has-property-descriptors: 1.0.2
             object-keys: 1.1.1
+
+    delayed-stream@1.0.0: {}
 
     depd@2.0.0: {}
 
@@ -4805,9 +4924,20 @@ snapshots:
         dependencies:
             is-callable: 1.2.7
 
+    form-data@4.0.5:
+        dependencies:
+            asynckit: 0.4.0
+            combined-stream: 1.0.8
+            es-set-tostringtag: 2.1.0
+            hasown: 2.0.2
+            mime-types: 2.1.35
+
     forwarded@0.2.0: {}
 
     fresh@2.0.0: {}
+
+    fsevents@2.3.2:
+        optional: true
 
     function-bind@1.1.2: {}
 
@@ -5194,7 +5324,13 @@ snapshots:
             braces: 3.0.3
             picomatch: 2.3.1
 
+    mime-db@1.52.0: {}
+
     mime-db@1.54.0: {}
+
+    mime-types@2.1.35:
+        dependencies:
+            mime-db: 1.52.0
 
     mime-types@3.0.2:
         dependencies:
@@ -5248,7 +5384,7 @@ snapshots:
 
     negotiator@1.0.0: {}
 
-    next@16.1.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0):
+    next@16.1.0(@playwright/test@1.57.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0):
         dependencies:
             "@next/env": 16.1.0
             "@swc/helpers": 0.5.15
@@ -5267,6 +5403,7 @@ snapshots:
             "@next/swc-linux-x64-musl": 16.1.0
             "@next/swc-win32-arm64-msvc": 16.1.0
             "@next/swc-win32-x64-msvc": 16.1.0
+            "@playwright/test": 1.57.0
             sharp: 0.34.5
         transitivePeerDependencies:
             - "@babel/core"
@@ -5359,6 +5496,16 @@ snapshots:
 
     picomatch@4.0.3: {}
 
+    playwright-core@1.57.0:
+        optional: true
+
+    playwright@1.57.0:
+        dependencies:
+            playwright-core: 1.57.0
+        optionalDependencies:
+            fsevents: 2.3.2
+        optional: true
+
     possible-typed-array-names@1.1.0: {}
 
     postcss@8.4.31:
@@ -5387,6 +5534,8 @@ snapshots:
         dependencies:
             forwarded: 0.2.0
             ipaddr.js: 1.9.1
+
+    proxy-from-env@1.1.0: {}
 
     punycode@2.3.1: {}
 
@@ -5903,3 +6052,5 @@ snapshots:
             yargs-parser: 21.1.1
 
     yocto-queue@0.1.0: {}
+
+    zod@4.3.5: {}

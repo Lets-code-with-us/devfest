@@ -1,0 +1,1 @@
+{"root":["./src/apis/index.ts","./src/apis/handlers/getHandler.handler.ts","./src/apis/handlers/postHandler.handler.ts","./src/apis/pkg/api.package.ts","./src/apis/pkg/assert.package.ts","./src/apis/pkg/schema.package.ts","./src/ui/index.ts"],"version":"5.9.2"}

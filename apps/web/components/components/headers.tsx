@@ -2,11 +2,12 @@
 import { Code2, Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
+import Link from "next/link";
+import { SignedIn, SignedOut, UserAvatar } from "@clerk/clerk-react";
 
 const navLinks = [
 	{ name: "Challenges", href: "#challenges" },
 	{ name: "How It Works", href: "#how-it-works" },
-	{ name: "Prizes", href: "#prizes" },
 	{ name: "FAQ", href: "#faq" },
 ];
 
@@ -42,10 +43,19 @@ export const Header = () => {
 
 					{/* Desktop CTA */}
 					<div className="hidden md:flex items-center gap-3">
-						<Button variant="ghost" size="sm">
-							Sign In
-						</Button>
-						<Button size="sm">Join Contest</Button>
+						<SignedIn>
+							<UserAvatar />
+						</SignedIn>{" "}
+						<SignedOut>
+							<Link href={"/auth/signup"}>
+								<Button variant="ghost" size="sm">
+									Sign In
+								</Button>
+							</Link>
+						</SignedOut>
+						<Link prefetch href={"/contests"}>
+							<Button size="sm">Join Contest</Button>
+						</Link>
 					</div>
 
 					{/* Mobile Menu Button */}

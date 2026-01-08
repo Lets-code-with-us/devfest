@@ -41,14 +41,6 @@ const Page = () => {
 				{/* Content */}
 				<div className="container relative z-10 mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-32">
 					<div className="max-w-4xl mx-auto text-center">
-						{/* Badge */}
-						<div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-primary/30 bg-primary/5 mb-8 animate-fade-up">
-							<Sparkles className="h-4 w-4 text-primary" />
-							<span className="text-sm font-medium text-primary">
-								Season 2 Registration Open
-							</span>
-						</div>
-
 						{/* Headline */}
 						<h1
 							className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold leading-tight mb-6 animate-fade-up"

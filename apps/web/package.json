@@ -11,6 +11,7 @@
 		"check-types": "next typegen && tsc --noEmit"
 	},
 	"dependencies": {
+		"@clerk/clerk-react": "^5.59.3",
 		"@radix-ui/react-accordion": "^1.2.12",
 		"@radix-ui/react-slot": "^1.2.4",
 		"@tailwindcss/postcss": "^4.1.18",
@@ -25,8 +26,8 @@
 		"tailwindcss": "^4.1.18"
 	},
 	"devDependencies": {
-		"@repo/eslint-config": "workspace:*",
 		"@devfest/typescript-config": "workspace:*",
+		"@repo/eslint-config": "workspace:*",
 		"@types/node": "^22.15.3",
 		"@types/react": "19.2.2",
 		"@types/react-dom": "19.2.2",

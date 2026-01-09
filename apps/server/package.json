@@ -5,7 +5,8 @@
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"build": "tsc -b",
-		"dev": "nodemon ./dist/index.js"
+		"dev": "nodemon ./dist/index.js",
+		"ngrok:server": "nodemon ./dist/utils/ngrok.helper.js"
 	},
 	"keywords": [],
 	"author": "",
@@ -20,6 +21,7 @@
 	"devDependencies": {
 		"@devfest/typescript-config": "workspace:*",
 		"@types/express": "^5.0.6",
+		"ngrok": "5.0.0-beta.2",
 		"ruru": "2.0.0-rc.3"
 	}
 }

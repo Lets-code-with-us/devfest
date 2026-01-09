@@ -1,6 +1,6 @@
-export interface Auth{
-    userid:string,
-    email:string,
-    firstname:string,
-    lastname?:string
+export interface Auth {
+	userid: string;
+	email: string;
+	firstname: string;
+	lastname?: string;
 }
